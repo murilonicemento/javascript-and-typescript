@@ -6,12 +6,13 @@ export default function Login() {
     return (
         <Container>
             <Title>
-                <h1>
-                    Login
-                    <small>Oie</small>
-                </h1>
+                Login
+                <small>Oie</small>
             </Title>
             <Paragrafo>Lorem ipsum dolor</Paragrafo>
+            <button type="button">
+                Enviar
+            </button>
         </Container>
     )
 }
