@@ -4,11 +4,13 @@ import { Form } from "./styled";
 import { toast } from "react-toastify";
 import { isEmail } from "validator";
 import { useDispatch } from "react-redux";
+import { get } from "lodash";
 import * as actions from "../../store/modules/auth/actions"
 
 
-export default function Login() {
+export default function Login(props) {
     const dispatch = useDispatch();
+    const prevPath = get(props, "location.state.prevPath", "/")
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
@@ -27,7 +29,7 @@ export default function Login() {
 
         if (formErrors) return;
 
-        dispatch(actions.loginRequest({ email, password }))
+        dispatch(actions.loginRequest({ email, password, prevPath }))
     }
 
     return (
@@ -36,7 +38,6 @@ export default function Login() {
             <Form onSubmit={handleSubmit}>
                 <input type="text" value={email} onChange={event => setEmail(event.target.value)} placeholder="Seu e-mail"></input>
                 <input type="password" value={password} onChange={event => setPassword(event.target.value)} placeholder="Sua Senha"></input>
-
                 <button type="submit">Acessar</button>
             </Form>
         </Container>

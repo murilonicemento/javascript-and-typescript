@@ -7,7 +7,7 @@ export function loginRequest(payload) {
     };
 }
 
-export function loginSucess(payload) {
+export function loginSuccess(payload) {
     return {
         type: types.LOGIN_SUCCESS,
         payload
