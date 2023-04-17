@@ -35,13 +35,13 @@ export default function Fotos({ match }) {
 
     const handleChange = async event => {
         const file = event.target.files[0];
-        const fotoURL = URL.createObjectURL(foto);
+        const fotoURL = URL.createObjectURL(file);
 
         setFoto(fotoURL);
 
         const formData = new FormData();
         formData.append("aluno_id", id);
-        formData.append("foto", foto);
+        formData.append("foto", file);
 
         try {
             setIsLoading(true);
