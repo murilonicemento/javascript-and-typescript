@@ -11,4 +11,4 @@ body3.style.backgroundColor = "red";
 
 // Type assertion (NÃO RECOMENDADO)
 const body4 = document.querySelector("body") as unknown as number;
-body4.style.backgroundColor = "red";
+// body4.style.backgroundColor = "red";
