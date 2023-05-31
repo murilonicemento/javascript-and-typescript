@@ -20,7 +20,7 @@ const username = document.querySelector(".username");
 const email = document.querySelector(".email");
 const password = document.querySelector(".password");
 const repeatPassword = document.querySelector(".password2");
-form.addEventListener("submit", (event) => {
+form.addEventListener("submit", function (event) {
     event.preventDefault();
     hideErrorMessage(this);
     checkForEmptyFields(username, email, password, repeatPassword);
