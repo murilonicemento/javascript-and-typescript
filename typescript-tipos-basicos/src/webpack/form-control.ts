@@ -13,7 +13,7 @@ form.addEventListener("submit", function (event) {
   checkForEmptyFields(username, email, password, repeatPassword);
   checkEmail(email);
   checkEqualPasswords(password, repeatPassword);
-  if (shouldSendForm(this)) console.log("FORMULÁRIO ENVIADO   ");
+  if (shouldSendForm(this)) console.log("FORMULÁRIO ENVIADO");
 });
 
 function hideErrorMessage(form: HTMLFormElement): void {

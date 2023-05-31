@@ -27,7 +27,7 @@ form.addEventListener("submit", function (event) {
     checkEmail(email);
     checkEqualPasswords(password, repeatPassword);
     if (shouldSendForm(this))
-        console.log("FORMULÁRIO ENVIADO   ");
+        console.log("FORMULÁRIO ENVIADO");
 });
 function hideErrorMessage(form) {
     form
