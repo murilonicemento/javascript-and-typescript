@@ -1,0 +1,20 @@
+# Arquivos de compilação TypeScript
+*.js
+*.js.map
+
+# Diretórios de compilação
+/dist/
+
+# Dependências do gerenciador de pacotes
+/node_modules/
+
+# Arquivos de configuração do TypeScript
+tsconfig.json
+tsconfig.*.json
+
+# Arquivos de configuração de IDEs comuns
+.vscode/
+.idea/
+*.sublime-*
+*.swp
+*.swo
